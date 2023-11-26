@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+	int r;
+	printf("Nhap vao gia tri cua ban kinh hinh tron = ");
+	scanf("%d", &r);
+	const float PI = 3.14;
+	float perCir = 2 * PI * r;
+	float sqrCir = PI * pow(r, 2);
+	printf("Chu vi hinh tron = %.2f\n", perCir);
+	printf("Dien tich hinh tron = %.2f", sqrCir);
+}
