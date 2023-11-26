@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(){
+	float math_mark; 
+	float lite_mark;
+	float eng_mark;
+	printf("Nhap vao diem toan, van, anh cua ban: ");
+	scanf("%f %f %f", &math_mark, &lite_mark, &eng_mark);
+	float sum_mark = math_mark + lite_mark + eng_mark;
+	float avg_mark = (math_mark + lite_mark + eng_mark)/3;
+	printf("Tong diem cua ban: %.2f\n", sum_mark);
+	printf("Diem trung binh cua ban: %.2f", avg_mark);
+}
