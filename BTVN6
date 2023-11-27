@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+	int yearOfbirth;
+	int thisYear;
+	printf("Nhap vao nam sinh cua ban: ");
+	scanf("%d", &yearOfbirth);
+	printf("Nhap vao nam hien tai: ");
+	scanf("%d", &thisYear);
+	int age = thisYear - yearOfbirth;
+	if(age % 2 != 0)
+	{
+		printf("Tuoi cua ban la so le"); 
+	}
+	else {
+		printf("Tuoi cua ban la so chan");
+	}
+}
