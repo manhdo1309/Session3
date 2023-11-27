@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main(){
+	int number;
+	printf("Nhap vao so nguyen co 4 chu so: ");
+	scanf("%d", &number);
+	int thousandDigit, hundredDigit, dozenDigit, unitDigit;
+	unitDigit = number % 10;
+	dozenDigit = (number % 100) / 10;
+	hundredDigit = (number %1000) / 100;
+	thousandDigit = (number / 1000);
+	printf("Chu so hang don vi la %d\n", unitDigit);
+	printf("Chu so hang chuc la %d\n", dozenDigit);
+	printf("Chu so hang tram la %d\n", hundredDigit);
+	printf("Chu so hang nghin la %d\n", thousandDigit);
+	int total = unitDigit + dozenDigit + hundredDigit + thousandDigit;
+	printf("Tong cua cac chu so la %d\n", total);
+	printf("So nghich dao la %d%d%d%d", unitDigit, dozenDigit, hundredDigit, thousandDigit);
+}
